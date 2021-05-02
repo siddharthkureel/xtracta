@@ -1,5 +1,5 @@
 # Xtracta
-A simple user-interface to scan the SupplierName.text with Invoices.txt
+A simple user-interface to scan and compare the SupplierName.text with Invoices.txt in react
 
 
 ## Features
