@@ -30,7 +30,7 @@ const DropInvoice = () => {
             setInvoiceData(match);
         };
         reader.readAsText(acceptedFiles[0]);
-    },[setInvoiceData])
+    },[setInvoiceData, supplierData])
 
     const { getRootProps, getInputProps} = useDropzone({ onDropAccepted });
 
@@ -38,7 +38,7 @@ const DropInvoice = () => {
         <div style={styles.container} >
             <div style={styles.drop} {...getRootProps()}>
                 <input {...getInputProps()} />
-                <p>Drag 'n' drop file here, or click to select file</p>
+                <p>Drag 'n' drop Invoices.txt file here, or click to select file</p>
             </div>
         </div>
     );
@@ -51,7 +51,7 @@ const styles = {
     },
     drop: {
         marginTop: '20px',
-        border: '3px dotted red',
+        border: '3px dotted green',
         width: '98%',
         height: '94%'
     },

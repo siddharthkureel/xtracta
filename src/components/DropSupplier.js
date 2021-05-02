@@ -29,7 +29,7 @@ const DropSupplier = () => {
         <div style={styles.container} >
             <div style={styles.drop} {...getRootProps()}>
                 <input {...getInputProps()} />
-                <p>Drag 'n' drop Supplier files here, or click to select file</p>
+                <p>Drag 'n' drop Suppliernames.txt file here, or click to select file</p>
             </div>
         </div>
     );

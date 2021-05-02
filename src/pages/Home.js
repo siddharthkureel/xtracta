@@ -16,13 +16,13 @@ const Home = () => {
                 <DropSupplier />
                 {supplierData ? <DropInvoice /> : null}
             </div>
-            <div>
+            <div style={styles.content} >
                 {invoiceData===null ? 
                 '':
                 invoiceData===true ?
-                'Invoice contains listed Supplier'
+                <h2 style={styles.success} >Invoice contains supplier in the list</h2>
                 : 
-                `Invoice doesn't contain listed Supplier`
+                <h2 style={styles.error} >Invoice doesn't contain supplier in the list</h2>
                 }
             </div>
         </div>
@@ -35,9 +35,20 @@ const styles = {
         width: '100%',
         height: '80vh'
     },
+    content: {
+        margin: '8%'
+    },
     row: {
         display: 'flex',
         marginBottom: '30px'
+    },
+    success: {
+        color: 'green',
+        textAlign: 'center'
+    },
+    error: {
+        color: 'red',
+        textAlign: 'center'
     }
 }
 
