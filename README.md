@@ -1,5 +1,5 @@
 # Xtracta
-Scanning the SupplierName.text with Invoices.txt
+A simple user-interface to scan the SupplierName.text with Invoices.txt
 
 
 ## Features
@@ -16,4 +16,5 @@ Scanning the SupplierName.text with Invoices.txt
 - npm install
 - drag n drop or click to open suppliername.txt file 
 - drag n drop or click to open Invoices.txt file 
+- See the result
 
